@@ -1,0 +1,193 @@
+/* Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+}
+/* Couleur */
+:root{
+    --first-color:#222222;
+    --second-color:#045757;
+    --third-color:#044343;
+    --fourth-color:#E4E4E4;
+}
+body{
+    background-color: var(--first-color);
+}
+/* en tête */
+.header{
+    background-color: var(--third-color);
+    height: 100px;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 30px;
+}
+.home{
+    color: var(--fourth-color);
+    cursor: pointer;
+    font-size: 24px;
+    margin: 10px;
+}
+
+/* Navigation */
+nav ul{
+    display: flex;
+}
+nav ul li{
+    list-style: none;
+    margin-right: 1rem;
+}
+nav ul li a{
+    text-decoration: none;
+    color: white;
+    font-size: 1.2rem;
+    font-weight: bold;
+    padding: 0.2rem 0.6rem;
+    position: relative;
+}
+nav ul li a::before{
+    content: "";
+    position: absolute;
+    top:-10px;
+    left:50%;
+    height: 3px;
+    width:0;
+    transform: translateX(-50%);
+    background-color: var(--first-color);
+    transition: all 0.3s ease-in-out;
+}
+nav ul li a:hover:before{
+    width:100%;
+}
+nav ul li a:focus{
+    background-color: var(--first-color);
+    opacity: 0.2px;
+    border-radius: 20px;
+}
+nav ul li a:focus::before{
+    width: 0%;
+}
+/* Barre de recherche */
+.search-btn{
+    display: flex;
+}
+.inputText{
+    outline: none;
+    border: 1px solid var(--first-color);
+    border-radius: 2rem 0 0 2rem;
+    padding: 0.3rem 1rem;
+    font-size: 1rem;
+    color: white;
+    background-color: var(--first-color);
+    box-shadow: inset 0 3px 10px var(--third-color);
+}
+.inputText::placeholder{
+    color: white;
+}
+.search-btn button{
+    background-color: var(--second-color);
+    box-shadow: inset 0 5px 10px var(--first-color);
+    padding: 0.2rem 0.5rem;
+    border-radius: 0 2rem 2rem 0;
+    color: white;
+    font-size: 1rem;
+    outline: none;
+    border: 1px solid var(--first-color);
+}
+.container{
+    margin: auto;
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.movie{
+    box-shadow: 0 5px 10px rgba(0,0,0,0.5);
+    width: 250px;
+    background-color: var(--fourth-color);
+    margin: 1rem;
+    border-radius: 5px;
+    box-sizing: border-box;
+    overflow: hidden;
+    position: relative;
+}
+/* Détails film */
+.movie .poster{
+    width: 100%;
+    height: 250px;
+}
+.movie-details{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.movie-details .box{
+    width: 100%;
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.movie-details .title{
+    width: 160px;
+    font-size: 15px;
+    text-align: center;
+}
+.movie-details .overview{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    max-height: 100%;
+    background-color: var(--third-color);
+    opacity: 0.9;
+    color: white;
+    box-sizing: border-box;
+    padding: 1rem;
+    transition: all 0.4s ease-in-out;
+    overflow-y: auto;
+    transform: translateY(101%);
+}
+.movie-details:hover .overview{
+    transform: translateY(0%);
+}
+/* Bulle note */
+.rating{
+    background-color: var(--second-color);
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    border: 1px solid var(--first-color);
+    box-shadow: inset 0 5px 5px rgba(0,0,0,0.5);
+    position: absolute;
+    right: 5px;
+    bottom: 5px;
+}
+@media (max-width:900px){
+    .header{
+        background-color: var(--third-color);
+        height: 180px;
+    }
+    nav ul{
+        display: flex;
+        flex-direction: column;
+    }
+    nav ul li{
+        padding-top: 10px;
+    }
+    .search-btn{
+        width: 200px;
+        margin-right: 100px;
+    }
+}
+.notfound{
+    font-size: 40px;
+    font-weight: bold;
+}
