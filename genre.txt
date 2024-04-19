@@ -1,0 +1,7 @@
+Pour retrouver le genre des film :
+
+https://api.themoviedb.org/3/genre/movie/list?api_key=1a12d9958645840be3601684cc917737&language=fr-FR
+
+Pour retrouver le genre des séries :
+
+https://api.themoviedb.org/3/genre/tv/list?api_key=1a12d9958645840be3601684cc917737&language=fr-FR
