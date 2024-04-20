@@ -21,6 +21,10 @@ const Home = () => {
         }
     };
 
+    const clearSearch = () => {
+        setSearch('');
+    }
+
     return (
         <>
             <div className="header">
@@ -31,14 +35,9 @@ const Home = () => {
 
                 <form>
                     <div className="search-btn">
-                    <input
-                            type="text"
-                            placeholder="Recherche de Films"
-                            className="inputText"
-                            onChange={(e) => setSearch(e.target.value)}
-                            value={search}
-                            onKeyPress={searchMovie}
-                        />
+                        <input type="text" placeholder="Recherche de Films" className="inputText"
+                               onChange={(e) => setSearch(e.target.value)} value={search} onKeyPress={searchMovie}
+                               onFocus={clearSearch}/>
                         <button type="submit" onClick={(e) => e.preventDefault()}><i className="fas fa-search"></i>
                         </button>
                     </div>

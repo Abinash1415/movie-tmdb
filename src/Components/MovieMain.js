@@ -84,9 +84,7 @@ const MovieMain=()=>{
 
                 <form>
                     <div className="search-btn">
-                        <input type="text" placeholder="Recherche" className="inputText"
-                               onChange={(e) => setSearch(e.target.value)}
-                               value={search} onKeyPress={searchMovie} onFocus={clearSearch}></input>
+                        <input type="text" placeholder="Recherche" className="inputText" onChange={(e) => setSearch(e.target.value)} value={search} onKeyPress={searchMovie} onFocus={clearSearch}></input>
                         <button><i className="fas fa-search"></i></button>
                     </div>
                 </form>

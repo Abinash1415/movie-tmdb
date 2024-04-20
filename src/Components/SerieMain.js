@@ -85,9 +85,7 @@ const SerieMain=()=>{
 
                 <form>
                     <div className="search-btn">
-                        <input type="text" placeholder="Recherche" className="inputText"
-                               onChange={(e) => setSearch(e.target.value)}
-                               value={search} onKeyPress={searchSerie} onFocus={clearSearch}></input>
+                        <input type="text" placeholder="Recherche" className="inputText" onChange={(e) => setSearch(e.target.value)} value={search} onKeyPress={searchSerie} onFocus={clearSearch}></input>
                         <button><i className="fas fa-search"></i></button>
                     </div>
                 </form>
