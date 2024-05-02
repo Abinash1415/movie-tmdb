@@ -13,7 +13,7 @@
     --fourth-color:#E4E4E4;
 }
 body{
-    background-color: var(--first-color);
+    background-color: var(--fourth-color);
 }
 /* en tête */
 .header{

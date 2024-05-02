@@ -6,6 +6,7 @@ import SerieMain from "./Components/SerieMain";
 import CardM from './Components/CardM';
 import CardS from './Components/CardS';
 import './Components/style.css';
+import ActorDetails from './Components/ActorDetails';
 
 function App() {
     return (
@@ -16,6 +17,7 @@ function App() {
                 <Route path="/movie/:id" element={<CardM />} />
                 <Route path="/series" element={<SerieMain />} />
                 <Route path="/series/:id" element={<CardS />} />
+                <Route path="/actor/:id" element={<ActorDetails/>} />
             </Routes>
         </Router>
     );
