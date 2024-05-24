@@ -10,7 +10,7 @@ const ActorDetails = () => {
     const [movieCredits, setMovieCredits] = useState([]);
     const [tvCredits, setTvCredits] = useState([]);
     const imgPath = "https://image.tmdb.org/t/p/w500";
-    const apiKey = 'fd4a8eaaed29f7611f28b49dc74aedbf';
+    const apiKey = '################################';
 
     useEffect(() => {
         const fetchActorDetails = async () => {
