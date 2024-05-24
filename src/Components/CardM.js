@@ -7,7 +7,7 @@ const CardM = (movie) => {
     const [modalIsOpen, setModalIsOpen] = useState(false);
     const [actors, setActors] = useState([]);
     const img_path = "https://image.tmdb.org/t/p/w500";
-    const apiKey = 'fd4a8eaaed29f7611f28b49dc74aedbf';
+    const apiKey = '################################';
     const fetchActors = async () => {
         const url = `https://api.themoviedb.org/3/movie/${movie.info.id}/credits?api_key=${apiKey}&language=en-US`;
         try {
