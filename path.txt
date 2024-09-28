@@ -1,8 +1,1 @@
-App.js : C:\Users\aroy\Desktop\Situation\movie\src\App.js
-CardM : C:\Users\aroy\Desktop\Situation\movie\src\Components\CardM.js
-CardS : C:\Users\aroy\Desktop\Situation\movie\src\Components\CardS.js
-Home.js : C:\Users\aroy\Desktop\Situation\movie\src\Components\Home.js
-ModalM : C:\Users\aroy\Desktop\Situation\movie\src\Components\ModalM.js
-MovieMain.js : C:\Users\aroy\Desktop\Situation\movie\src\Components\MovieMain.js
-SerieMain.js : C:\Users\aroy\Desktop\Situation\movie\src\Components\SerieMain.js
-style.css : C:\Users\aroy\Desktop\Situation\movie\src\Components\style.css
+
